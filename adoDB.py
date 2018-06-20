@@ -9,12 +9,12 @@ adStateOpen = 1
 class Connection:
     def __init__(self, servername, username='', password='', db=''):
         self.connection = connection
-        self.version = '';
-        self.servername = servername;
-        self.username = username;
-        self.password = password;
-        self.defdb = db;
-        self.constr = '';
+        self.version = ''
+        self.servername = servername
+        self.username = username
+        self.password = password
+        self.defdb = db
+        self.constr = ''
         if db == '':
             self.defdb = 'master'
         self.connected = 0
